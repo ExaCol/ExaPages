@@ -1,6 +1,10 @@
 .hexagon-section {
-    text-align: center;
-    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    max-width: 100%; /* Asegura que no sobrepase el ancho de la pantalla */
 }
 
 .hex-grid {
