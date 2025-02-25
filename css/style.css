@@ -164,6 +164,81 @@ body {
   background-color: #f9f9f9;
 }
 
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaciado uniforme entre tarjetas */
+}
+
+.team-card {
+  width: 300px; /* Tamaño uniforme para todas las tarjetas */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido en la parte superior */
+  min-height: 400px; /* Asegura que todas tengan la misma altura */
+}
+
+/* Imagen */
+.team-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Asegurar que el nombre y el cargo tengan el mismo formato */
+.team-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.team-role {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Texto oculto */
+.hidden-info {
+  display: none;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+/* Mostrar información al activar */
+.team-card.active .hidden-info {
+  display: block;
+}
+
+/* Botón alineado uniformemente */
+.toggle-info {
+  margin-top: auto; /* Mantiene los botones en la misma línea */
+  width: 80%; /* Tamaño uniforme */
+  padding: 10px;
+  font-size: 16px;
+  background: #C58ADE;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-info:hover {
+  background: #8869A5;
+}
+
 .team-title {
   font-size: 2.5em;
   color: #4a4a4a;
