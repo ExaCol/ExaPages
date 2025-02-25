@@ -6,16 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/Hexagonos.css">
+  <link rel="stylesheet" href="css/PantallaDeCarga.css">
   <title>Exa</title>
 </head>
 
-<section class="hexagon-section">
-  <div class="hex-grid" id="hexGrid"></div>
-</section>
-<script src="js/hexagonos.js"></script>
+<body>
 
-
-<body>  
+  <!-- Pantalla de carga -->
+  <div class="loading-container">
+    <div class="aro"></div>
+  
+    <div class="loading">
+      <div class="row">
+        <div hexagon="1"></div>
+        <div hexagon="2"></div>
+      </div>
+  
+      <div class="row">
+        <div hexagon="6"></div>
+        <div hexagon="7"></div>
+        <div hexagon="3"></div>
+      </div>
+  
+      <div class="row">
+        <div hexagon="5"></div>
+        <div hexagon="4"></div>
+      </div>
+    </div>
+  </div>
+    
   <header class="header">
     <img src="img/logo.png" alt="Logo de Exa" class="logo">
     <nav class="navbar">
@@ -111,6 +130,7 @@
   </section>
 
   <footer>
+    
     <p>Síguenos en
       <a href="https://www.tiktok.com/@exa_col" target="_blank">TikTok</a>,
       <a href="https://www.instagram.com/exa_col/" target="_blank">Instagram</a> y
@@ -121,6 +141,12 @@
     <a href="mailto:exacorp25@gmail.com" target="_blank">exacorp25@gmail.com</a>
     <p>&copy; Exa. 2025. Todos los derechos reservados.</p>
     <p>Bogotá D.C.</p>
+
+    <section class="hexagon-section">
+      <div class="hex-grid" id="hexGrid"></div>
+    </section>
+    <script src="js/Scripts.js"></script>
+    <script src="js/hexagonos.js"></script>
   </footer>
 </body>
 

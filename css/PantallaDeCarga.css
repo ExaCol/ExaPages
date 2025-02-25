@@ -1,0 +1,346 @@
+.loading-container .aro::before,
+.loading-container .aro::after,
+.loading-container .loading::before,
+.loading-container .loading::after {
+
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.loading-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    /* Usa flexbox para centrar */
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    z-index: 9999;
+    /* Asegura que esté por encima del contenido */
+
+}
+
+.loading-container .aro {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 2px solid rgba(185, 174, 173, 0.2);
+    border-radius: 50%;
+}
+
+.loading-container .aro::before {
+    animation-name: rotation90deg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #3d4760;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+@keyframes rotation90deg {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(450deg);
+    }
+}
+
+.loading-container .aro::after {
+    border: 2px solid rgba(185, 174, 173, 0.2);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.loading-container .loading {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.loading-container .loading [hexagon="1"] {
+    animation-name: hexagon1;
+    animation-duration: 3s;
+    animation-delay: -1.8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes hexagon1 {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(-90deg) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+}
+
+.loading-container .loading [hexagon="2"] {
+    animation-name: hexagon2;
+    animation-duration: 3s;
+    animation-delay: -1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes hexagon2 {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(-90deg) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+}
+
+.loading-container .loading [hexagon="3"] {
+    animation-name: hexagon3;
+    animation-duration: 3s;
+    animation-delay: -1.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes hexagon3 {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(-90deg) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+}
+
+.loading-container .loading [hexagon="4"] {
+    animation-name: hexagon4;
+    animation-duration: 3s;
+    animation-delay: -0.9s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes hexagon4 {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(-90deg) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+}
+
+.loading-container .loading [hexagon="5"] {
+    animation-name: hexagon5;
+    animation-duration: 3s;
+    animation-delay: -0.6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes hexagon5 {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(-90deg) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+}
+
+.loading-container .loading [hexagon="6"] {
+    animation-name: hexagon6;
+    animation-duration: 3s;
+    animation-delay: -0.3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes hexagon6 {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(-90deg) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+}
+
+.loading-container .loading [hexagon="7"] {
+    animation-name: hexagon7;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes hexagon7 {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(-90deg) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.3) translateY(20px);
+    }
+}
+
+.loading-container .loading .row {
+    margin-right: 20px;
+    display: grid;
+    position: relative;
+    align-items: center;
+}
+
+.loading-container .loading .row:nth-child(1),
+.loading-container .loading .row:nth-child(3) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.loading-container .loading .row:nth-child(2) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.loading-container .loading .row [hexagon] {
+    width: 17px;
+    height: 0;
+    position: relative;
+    background-color: transparent;
+    border-bottom: 17px solid #3d4760;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transform: rotate(-90deg);
+}
+
+.loading-container .loading .row [hexagon]::after {
+    content: "";
+    width: 17px;
+    height: 0;
+    position: absolute;
+    bottom: -34px;
+    left: -10px;
+    right: 0;
+    border-top: 17px solid #3d4760;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.loading-container .loading::before {
+    animation-name: rotation230deg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    animation-delay: 2.2s;
+    border: 5px solid #b9aead;
+    border-bottom: 5px solid #3d4760;
+    border-radius: 50%;
+}
+
+@keyframes rotation230deg {
+    from {
+        transform: rotate(230deg);
+    }
+
+    to {
+        transform: rotate(590deg);
+    }
+}
+
+.loading-container .loading::after {
+    animation-name: rotation280deg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #b9aead;
+    border-radius: 50%;
+}
+
+@keyframes rotation280deg {
+    from {
+        transform: rotate(280deg);
+    }
+
+    to {
+        transform: rotate(640deg);
+    }
+}
+
+#content {
+    display: none;
+    /* Se oculta hasta que la pantalla de carga desaparezca */
+}
