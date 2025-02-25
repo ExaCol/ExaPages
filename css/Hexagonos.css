@@ -1,7 +1,6 @@
 .hexagon-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #e9ecef;
 }
 
 .hex-grid {
@@ -18,13 +17,13 @@
 
 .first-row {
     margin-left: 105px; /* Desplaza filas alternas */
-    margin-bottom: -16px; /* Acerca la primera fila a la segunda */
+    margin-bottom: -21px; /* Acerca la primera fila a la segunda */
 }
 
 .hex {
     width: 100px;
-    height: 86px;
-    background: white;
+    height: 110px;
+    background: #8095CE;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
