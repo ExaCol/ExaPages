@@ -43,23 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 500);
     }, 2000);
   }
-  
-  // Team info toggle functionality
-  const toggleButtons = document.querySelectorAll('.toggle-info');
-  
-  toggleButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const card = this.closest('.team-card');
-      card.classList.toggle('active');
-      
-      // Change button text based on state
-      if (card.classList.contains('active')) {
-        this.textContent = 'Menos información';
-      } else {
-        this.textContent = 'Más información';
-      }
-    });
-  });
+
   
   // Mobile menu toggle functionality
   const header = document.querySelector('.header');
