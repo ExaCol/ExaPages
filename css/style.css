@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Base header styles */
 .header {
   position: fixed;
   top: 0;
@@ -11,10 +12,11 @@ body {
   z-index: 1000;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 20px;
   background-color: transparent;
   border-radius: 20px;
-
+  box-sizing: border-box;
 }
 
 .logo {
@@ -25,8 +27,8 @@ body {
   margin-top: 70px;
 }
 
+/* Responsive navbar */
 .navbar {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,8 +38,8 @@ body {
   border-radius: 20px;
   max-width: 400px;
   margin: 20px auto;
-  position: fixed;
-  right: 155px;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 .navbar-menu {
@@ -46,7 +48,6 @@ body {
   gap: 15px;
   margin: 0;
   padding: 0;
-  
 }
 
 .navbar-menu li a {
@@ -60,10 +61,20 @@ body {
   color: #8869A5;
 }
 
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #8869A5;
+}
+
 .faq-container {
-  position: fixed;
-  right: 20px;
-  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .faq-link {
@@ -74,78 +85,82 @@ body {
   border-radius: 20px;
   font-weight: bold;
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .faq-link:hover {
   background-color: #8869A5;
 }
 
+/* Responsive hero section */
 .hero {
   text-align: center;
-  padding: 30px 20px; /* Reducir padding */
+  padding: 30px 20px;
   background: linear-gradient(135deg, #8869A5 20%, #C58ADE 80%);
   color: white;
   position: relative;
-  min-height: 25vh; /* Reducir altura */
-  max-width: 80%; /* Limitar ancho */
-  margin: 40px auto; /* Centrar */
+  min-height: 25vh;
+  max-width: 90%;
+  margin: 40px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 40px; /* Más redondeado */
+  border-radius: 40px;
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .hero h2 {
-  font-size: 2em;
+  font-size: clamp(1.2em, 4vw, 2em);
   font-weight: 300;
   margin-bottom: 10px;
   opacity: 0.9;
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: clamp(1.5em, 5vw, 3em);
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 1.2;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.about {
-  max-width: 900px;
+/* Responsive about section */
+.about, .why-software, .why-exa {
+  max-width: 90%;
   margin: 50px auto;
-  padding: 40px;
+  padding: 30px;
   background-color: #f9f9f9;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.about h1 {
-  font-size: 2.5em;
+.about h1, .why-software h1 {
+  font-size: clamp(1.8em, 5vw, 2.5em);
   color: #8869A5;
   margin-bottom: 20px;
 }
 
 .about h2 {
-  font-size: 2em;
+  font-size: clamp(1.5em, 4vw, 2em);
   color: #4a4a4a;
   margin-top: 30px;
 }
 
-.about p {
-  font-size: 1.2em;
+.about p, .why-software p {
+  font-size: clamp(1em, 3vw, 1.2em);
   color: #555;
   line-height: 1.6;
   text-align: justify;
   margin-bottom: 15px;
 }
 
-.about::before {
+.about::before, .why-software::before {
   content: "";
   display: block;
   width: 80px;
@@ -160,15 +175,17 @@ body {
   max-width: 600px;
   border-radius: 10px;
   margin: 20px 0;
+  height: auto;
 }
 
+/* Responsive projects section */
 .projects {
   padding: 50px 20px;
   text-align: center;
 }
 
 .projects h1 {
-  font-size: 2em;
+  font-size: clamp(1.5em, 5vw, 2em);
   margin-bottom: 20px;
   color: #8869A5;
 }
@@ -184,7 +201,8 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  width: 200px;
+  width: 100%;
+  max-width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -212,110 +230,43 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  display: inline-block;
 }
 
+/* Responsive team section */
 .team {
   padding: 50px 20px;
   text-align: center;
   background-color: #f9f9f9;
 }
 
-.team-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Espaciado uniforme entre tarjetas */
-}
-
-.team-card {
-  width: 300px; /* Tamaño uniforme para todas las tarjetas */
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* Alinea el contenido en la parte superior */
-  min-height: 400px; /* Asegura que todas tengan la misma altura */
-}
-
-/* Imagen */
-.team-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-/* Asegurar que el nombre y el cargo tengan el mismo formato */
-.team-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.team-role {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-/* Texto oculto */
-.hidden-info {
-  display: none;
-  font-size: 14px;
-  color: #333;
-  text-align: center;
-}
-
-/* Mostrar información al activar */
-.team-card.active .hidden-info {
-  display: block;
-}
-
-/* Botón alineado uniformemente */
-.toggle-info {
-  margin-top: auto; /* Mantiene los botones en la misma línea */
-  width: 80%; /* Tamaño uniforme */
-  padding: 10px;
-  font-size: 16px;
-  background: #C58ADE;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.toggle-info:hover {
-  background: #8869A5;
-}
-
-.team-title {
-  font-size: 2.5em;
+.team h1 {
+  font-size: clamp(1.8em, 5vw, 2.5em);
   color: #4a4a4a;
   margin-bottom: 30px;
 }
 
 .team-container {
   display: flex;
-  justify-content: center;
-  gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .team-card {
   background-color: white;
   padding: 20px;
   border-radius: 15px;
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .team-card:hover {
@@ -344,88 +295,40 @@ body {
   font-weight: bold;
 }
 
-.team-skills {
+.team-skills, .hidden-info {
   font-size: 1em;
   color: #555;
   margin-bottom: 15px;
 }
 
-.team-profile-link {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #C58ADE;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+.hidden-info {
+  display: none;
 }
 
-.team-profile-link:hover {
-  background-color: #8869A5;
-}
-
-.about img {
-  width: 100%;
-  height: auto;
-}
-
-.team-img {
-  width: 120px; /* Tamaño pequeño */
-  height: 120px; /* Tamaño pequeño */
-  border-radius: 50%; /* Hace que la imagen sea redonda */
-  object-fit: cover; /* Asegura que la imagen se recorte correctamente sin deformarse */
-  border: 4px solid #8869A5; /* Añade un borde para resaltar la imagen */
-}
-
-
-.why-software {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 40px;
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.why-software h1 {
-  font-size: 2.5em;
-  color: #8869A5;
-  margin-bottom: 20px;
-}
-
-.why-software p {
-  font-size: 1.2em;
-  color: #555;
-  line-height: 1.6;
-  text-align: justify;
-  margin-bottom: 15px;
-}
-
-.why-software::before {
-  content: "";
+.team-card.active .hidden-info {
   display: block;
-  width: 80px;
-  height: 5px;
-  background-color: #8869A5;
-  margin: 0 auto 20px auto;
-  border-radius: 10px;
 }
 
-.why-exa {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 40px;
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.toggle-info {
+  margin-top: auto;
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  background: #C58ADE;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-/* 🎯 Título llamativo */
+.toggle-info:hover {
+  background: #8869A5;
+}
+
+/* Responsive why-exa section */
 .why-exa h1 {
-  font-size: 2.8em;
+  font-size: clamp(1.8em, 5vw, 2.8em);
   color: #8869A5;
   font-weight: bold;
   text-transform: uppercase;
@@ -434,7 +337,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Línea decorativa animada */
 .why-exa h1::after {
   content: "";
   width: 80px;
@@ -450,7 +352,6 @@ body {
   width: 120px;
 }
 
-/* 🎯 Diseño de tarjetas */
 .why-exa-container {
   display: flex;
   flex-wrap: wrap;
@@ -463,7 +364,8 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 15px;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease-in-out;
@@ -473,14 +375,12 @@ body {
   transform: translateY(-10px);
 }
 
-/* 🎯 Iconos */
 .why-exa-icon {
   font-size: 2.5em;
   color: #8869A5;
   margin-bottom: 10px;
 }
 
-/* 🎯 Texto dentro de cada tarjeta */
 .why-exa-card h2 {
   font-size: 1.4em;
   margin-bottom: 10px;
@@ -492,8 +392,7 @@ body {
   color: #555;
 }
 
-
-
+/* Responsive footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -503,8 +402,153 @@ footer {
 footer a {
   color: #007bff;
   text-decoration: none;
+  margin: 0 5px;
 }
 
 footer p {
   margin: 10px 0;
+}
+
+.contacto {
+  margin: 20px 0;
+}
+
+.contacto h3 {
+  color: #8869A5;
+  margin-bottom: 10px;
+}
+
+.contacto a {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .navbar {
+    position: relative;
+    right: auto;
+    margin: 0;
+    max-width: none;
+    flex: 1;
+  }
+  
+  .faq-container {
+    position: relative;
+    right: auto;
+    margin-left: 15px;
+  }
+  
+  .hero {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    box-shadow: none;
+  }
+  
+  .navbar.active {
+    max-height: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-menu {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .navbar-menu li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .navbar-menu li a {
+    display: block;
+    padding: 10px;
+  }
+  
+  .faq-container {
+    margin-left: auto;
+  }
+  
+  .about, .why-software, .why-exa {
+    padding: 20px 15px;
+  }
+  
+  .about p, .why-software p {
+    text-align: left;
+  }
+  
+  .team-card {
+    min-height: auto;
+  }
+  
+  .toggle-info {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    height: 30px;
+  }
+  
+  .faq-link {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .hero {
+    min-height: 20vh;
+    margin: 20px auto;
+    padding: 20px 10px;
+  }
+  
+  .projects-container, .team-container, .why-exa-container {
+    gap: 15px;
+  }
+  
+  .project-card, .team-card, .why-exa-card {
+    max-width: 100%;
+  }
+  
+  .why-exa-icon {
+    font-size: 2em;
+  }
+  
+  .contacto a {
+    display: inline-block;
+    margin: 5px;
+  }
 }
