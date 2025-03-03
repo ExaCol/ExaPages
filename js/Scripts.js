@@ -1,36 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const loadingContainer = document.querySelector(".loading-container");
-  const content = document.getElementById("content");
-
-  setTimeout(() => {
-      loadingContainer.style.opacity = "0"; // Suaviza la transición
-      setTimeout(() => {
-          loadingContainer.style.display = "none"; // Oculta completamente
-          content.style.display = "block"; // Muestra el contenido
-      }, 500); // Espera a que termine la animación
-  }, 2000); // Ajusta el tiempo de carga
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const buttons = document.querySelectorAll(".toggle-info");
-
-  buttons.forEach(button => {
-    button.addEventListener("click", function() {
-      const card = this.parentElement;
-      card.classList.toggle("active");
-
-      // Cambiar el texto del botón según el estado
-      if (card.classList.contains("active")) {
-        this.textContent = "Menos información";
-      } else {
-        this.textContent = "Más información";
-      }
-    });
-  });
-});
-
-// Wait for the DOM to be fully loaded
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {   
   // Loading screen functionality
   const loadingContainer = document.querySelector('.loading-container');
   
@@ -43,7 +11,23 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 500);
     }, 2000);
   }
-
+  
+  // Toggle info buttons functionality
+  const buttons = document.querySelectorAll(".toggle-info");
+  
+  buttons.forEach(button => {
+    button.addEventListener("click", function() {
+      const card = this.parentElement;
+      card.classList.toggle("active");
+      
+      // Cambiar el texto del botón según el estado
+      if (card.classList.contains("active")) {
+        this.textContent = "Menos información";
+      } else {
+        this.textContent = "Más información";
+      }
+    });
+  });
   
   // Mobile menu toggle functionality
   const header = document.querySelector('.header');
@@ -53,12 +37,12 @@ document.addEventListener("DOMContentLoaded", function() {
   menuToggle.classList.add('menu-toggle');
   menuToggle.innerHTML = '☰';
   
-  // Insert the menu toggle before the navbar
-  const navbar = document.querySelector('.navbar');
-  if (header && navbar) {
-    header.insertBefore(menuToggle, navbar);
+  // Insert the menu toggle at the end of the header
+  if (header) {
+    header.appendChild(menuToggle);
     
     // Add event listener to toggle
+    const navbar = document.querySelector('.navbar');
     menuToggle.addEventListener('click', function() {
       navbar.classList.toggle('active');
       this.innerHTML = navbar.classList.contains('active') ? '✕' : '☰';
