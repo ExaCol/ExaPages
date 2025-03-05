@@ -84,3 +84,84 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Projects Slider Functionality
+  const slider = document.querySelector('.projects-slider');
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  let currentIndex = 0;
+  const totalCards = projectCards.length;
+  let autoSlideInterval;
+  const AUTO_SLIDE_DELAY = 3000; // Cambia el slide cada 3 segundos
+
+  function getVisibleCards() {
+    // Determine number of visible cards based on screen width
+    if (window.innerWidth > 992) return 3;
+    if (window.innerWidth > 576) return 2;
+    return 1;
+  }
+
+  function updateSlider() {
+    const visibleCards = getVisibleCards();
+    const maxIndex = Math.max(0, totalCards - visibleCards);
+    
+    // Ensure current index doesn't exceed max possible index
+    currentIndex = Math.min(currentIndex, maxIndex);
+    
+    const cardWidth = projectCards[0].offsetWidth;
+    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    
+    // Disable/enable buttons based on current position
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex >= maxIndex;
+  }
+
+  function nextSlide() {
+    const visibleCards = getVisibleCards();
+    if (currentIndex < totalCards - visibleCards) {
+      currentIndex++;
+    } else {
+      currentIndex = 0; // Volver al inicio cuando llega al final
+    }
+    updateSlider();
+  }
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, AUTO_SLIDE_DELAY);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  // Navegación manual
+  nextBtn.addEventListener('click', function() {
+    stopAutoSlide(); // Detener el auto-slide al hacer click manual
+    if (currentIndex < totalCards - getVisibleCards()) {
+      currentIndex++;
+      updateSlider();
+    }
+    startAutoSlide(); // Reiniciar el auto-slide
+  });
+
+  prevBtn.addEventListener('click', function() {
+    stopAutoSlide(); // Detener el auto-slide al hacer click manual
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+    startAutoSlide(); // Reiniciar el auto-slide
+  });
+
+  // Pausar auto-slide al pasar el mouse
+  slider.addEventListener('mouseenter', stopAutoSlide);
+  slider.addEventListener('mouseleave', startAutoSlide);
+
+  // Initial setup and responsive handling
+  updateSlider();
+  startAutoSlide(); // Iniciar auto-slide
+  window.addEventListener('resize', updateSlider);
+});
