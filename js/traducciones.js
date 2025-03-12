@@ -618,8 +618,8 @@ function addLanguageButtons() {
 
   const languages = [
     { code: 'es', flag: '🇪🇸', text: 'ES' },
-    { code: 'en', flag: '🇺🇸', text: 'EN' },
-    { code: 'ja', flag: '🇯🇵', text: 'JP' }
+    { code: 'us', flag: '🇺🇸', text: 'US' },
+    { code: 'jp', flag: '🇯🇵', text: 'JP' }
   ];
   
   // Check if device is Android
