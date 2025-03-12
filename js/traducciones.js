@@ -157,148 +157,148 @@ const translations = {
       copyright: "Todos los derechos reservados.",
       location: "Bogotá D.C."
     }
-    
+
   },
-en: {
-  header: {
-    home: 'Home',
-    services: 'Services',
-    about: 'About Us',
-    faqs: 'FAQs',
-    contact: 'Contact'
+  en: {
+    header: {
+      home: 'Home',
+      services: 'Services',
+      about: 'About Us',
+      faqs: 'FAQs',
+      contact: 'Contact'
+    },
+    hero: {
+      subtitle: 'We develop technological solutions.',
+      title: 'We support your company’s growth with software tailored to your needs.'
+    },
+    about: {
+      title: 'About Us',
+      historyTitle: 'Exa’s History',
+      missionTitle: 'Mission',
+      visionTitle: 'Vision',
+      historyText: [
+        'Exa’s history began in the university classroom. Five young individuals passionate about technology —Luis, Julián, Nicolás, Tomás, and Felipe— realized that by sharing a common vision, they could turn ideas into reality. As systems engineering students, they came closer to their true mission through projects. Their mission was to create technological solutions that would have an impact on the world.',
+        'In 2024, when they reached their sixth semester at university, they accepted a challenge in a "Web Development" class. The challenge was to come up with an innovative project. Inspired by the university’s real needs, they developed a platform to reserve and manage labs, a system that did not exist before. This project, which started as an academic task, became a remarkable success. The university community’s response was overwhelming. They received praise and gratitude, and most importantly, they felt the satisfaction of having made a real impact on student life.',
+        'At that moment, they realized something important. They had the skills, passion, and vision, and they knew they could accomplish much more. Why limit themselves to one university? They could optimize processes for many more businesses and organizations. With this in mind, Exa was born in January 2025. Exa is a company with the mission of turning challenges into opportunities through software development.',
+        'And to this day, their belief remains unchanged. To innovate, solve problems, and support the digital transformation of all their clients. They continue to offer technology tailored to each individual need.'
+      ],
+      missionText: 'We develop innovative software solutions, driving the growth and digital transformation of our clients while optimizing process automation. Through cutting-edge technology, creativity, and a personalized approach, we provide services with exceptional quality and high responsibility, contributing to the success and sustainability of the companies we work with.',
+      visionText: 'We aim to establish ourselves as leaders in software development for small and medium-sized enterprises, both nationally and internationally. Our mission is to contribute to increasing business productivity and societal development by providing innovative and efficient technological solutions that adapt to market needs.'
+    },
+    projects: {
+      title: 'Our Projects',
+      cards: [
+        {
+          title: 'Project 1',
+          description: 'Description 1',
+          linkText: 'See more'
+        },
+        {
+          title: 'Project 2',
+          description: 'Description 2',
+          linkText: 'See more'
+        },
+        {
+          title: 'Project 3',
+          description: 'Description 3',
+          linkText: 'See more'
+        },
+        {
+          title: 'Project 4',
+          description: 'Description 4',
+          linkText: 'See more'
+        },
+        {
+          title: 'Project 5',
+          description: 'Description 5',
+          linkText: 'See more'
+        },
+        {
+          title: 'Project 6',
+          description: 'Description 6',
+          linkText: 'See more'
+        }
+      ]
+    },
+    team: {
+      title: 'Our Team',
+      members: [
+        {
+          name: 'Luis Gabriel Romero',
+          role: 'Full Stack Engineer',
+          description: 'Expert in Java, database management, and web development. With experience in data analysis, process automation, and system administration. Exceptional teamwork skills.',
+          languages: 'Languages: Spanish, English, Japanese'
+        },
+        {
+          name: 'Julián David Nova',
+          role: 'Backend Engineer and Requirements Analyst',
+          description: 'Expert in Java and databases (MySQL and PostgreSQL). Knowledgeable in JavaScript, Python, and HTML for web applications. Excellent teamwork abilities.',
+          languages: 'Spanish and English'
+        },
+        {
+          name: 'Nicolás Moreno Ramírez',
+          role: 'Backend Developer and ML Engineer',
+          description: 'Passionate about problem-solving and critical thinking. Exceptional teamwork, leadership, and strategic decision-making skills in software development.',
+          languages: 'Spanish and English'
+        },
+        {
+          name: 'Andrés Felipe Triviño',
+          role: 'Full Stack Developer with Backend Focus',
+          description: 'With extensive experience in Java, design patterns, and databases (MySQL, PostgreSQL, Oracle). Knowledgeable in JavaScript, HTML, CSS, and Python. Strong responsibility and leadership skills.',
+          languages: 'Spanish and English'
+        },
+        {
+          name: 'Tomás David Vera',
+          role: 'Full Stack Developer with Frontend Focus',
+          description: 'Creative and passionate about technology. With strong logical thinking, responsibility, and skills in developing engaging and dynamic interfaces.',
+          languages: 'Spanish and English'
+        }
+      ],
+      moreInfo: 'More Information',
+      lessInfo: 'Close Details'
+    },
+    whySoftware: {
+      title: 'Why Software is Necessary as a Solution?',
+      paragraphs: [
+        'Software is not just a technological tool; it is key to optimizing processes in any business, increasing productivity, and reducing costs.',
+        'Software is a set of programs designed to automate tasks, solve complex problems, and improve efficiency in data management and communication, offering effective solutions across various industries.',
+        'By implementing custom software, manual and repetitive processes are eliminated, minimizing errors and maximizing operational efficiency.',
+        'From workflow automation to improved decision-making through real-time data analysis, technology becomes a strategic partner for business growth.',
+        'It’s not just about adapting to the digital age, but leveraging its benefits to take your business to the next level.',
+        'Implementing the right solution allows for reduced work time, optimized resources, and improved customer service.',
+        'The change starts today. Are you ready to take the first step toward innovation?'
+      ]
+    },
+    whyExa: {
+      title: 'Why Choose EXA?',
+      cards: [
+        {
+          title: 'Technological Innovation',
+          description: 'Advanced solutions using the best technology in the market.'
+        },
+        {
+          title: 'Security and Trust',
+          description: 'We protect your information with the highest standards.'
+        },
+        {
+          title: 'Optimization and Efficiency',
+          description: 'We improve your experience with fast and effective processes.'
+        },
+        {
+          title: 'Support and Consultation',
+          description: 'We support you step by step with detailed attention.'
+        }
+      ]
+    },
+    footer: {
+      followText: "Follow us on",
+      and: "and",
+      contactTitle: "Contact information",
+      phoneText: "Phone Number",
+      copyright: "All rights reserved.",
+      location: "Bogotá D.C."
+    }
   },
-  hero: {
-    subtitle: 'We develop technological solutions.',
-    title: 'We support your company’s growth with software tailored to your needs.'
-  },
-  about: {
-    title: 'About Us',
-    historyTitle: 'Exa’s History',
-    missionTitle: 'Mission',
-    visionTitle: 'Vision',
-    historyText: [
-      'Exa’s history began in the university classroom. Five young individuals passionate about technology —Luis, Julián, Nicolás, Tomás, and Felipe— realized that by sharing a common vision, they could turn ideas into reality. As systems engineering students, they came closer to their true mission through projects. Their mission was to create technological solutions that would have an impact on the world.',
-      'In 2024, when they reached their sixth semester at university, they accepted a challenge in a "Web Development" class. The challenge was to come up with an innovative project. Inspired by the university’s real needs, they developed a platform to reserve and manage labs, a system that did not exist before. This project, which started as an academic task, became a remarkable success. The university community’s response was overwhelming. They received praise and gratitude, and most importantly, they felt the satisfaction of having made a real impact on student life.',
-      'At that moment, they realized something important. They had the skills, passion, and vision, and they knew they could accomplish much more. Why limit themselves to one university? They could optimize processes for many more businesses and organizations. With this in mind, Exa was born in January 2025. Exa is a company with the mission of turning challenges into opportunities through software development.',
-      'And to this day, their belief remains unchanged. To innovate, solve problems, and support the digital transformation of all their clients. They continue to offer technology tailored to each individual need.'
-    ],
-    missionText: 'We develop innovative software solutions, driving the growth and digital transformation of our clients while optimizing process automation. Through cutting-edge technology, creativity, and a personalized approach, we provide services with exceptional quality and high responsibility, contributing to the success and sustainability of the companies we work with.',
-    visionText: 'We aim to establish ourselves as leaders in software development for small and medium-sized enterprises, both nationally and internationally. Our mission is to contribute to increasing business productivity and societal development by providing innovative and efficient technological solutions that adapt to market needs.'
-  },
-  projects: {
-    title: 'Our Projects',
-    cards: [
-      {
-        title: 'Project 1',
-        description: 'Description 1',
-        linkText: 'See more'
-      },
-      {
-        title: 'Project 2',
-        description: 'Description 2',
-        linkText: 'See more'
-      },
-      {
-        title: 'Project 3',
-        description: 'Description 3',
-        linkText: 'See more'
-      },
-      {
-        title: 'Project 4',
-        description: 'Description 4',
-        linkText: 'See more'
-      },
-      {
-        title: 'Project 5',
-        description: 'Description 5',
-        linkText: 'See more'
-      },
-      {
-        title: 'Project 6',
-        description: 'Description 6',
-        linkText: 'See more'
-      }
-    ]
-  },
-  team: {
-    title: 'Our Team',
-    members: [
-      {
-        name: 'Luis Gabriel Romero',
-        role: 'Full Stack Engineer',
-        description: 'Expert in Java, database management, and web development. With experience in data analysis, process automation, and system administration. Exceptional teamwork skills.',
-        languages: 'Languages: Spanish, English, Japanese'
-      },
-      {
-        name: 'Julián David Nova',
-        role: 'Backend Engineer and Requirements Analyst',
-        description: 'Expert in Java and databases (MySQL and PostgreSQL). Knowledgeable in JavaScript, Python, and HTML for web applications. Excellent teamwork abilities.',
-        languages: 'Spanish and English'
-      },
-      {
-        name: 'Nicolás Moreno Ramírez',
-        role: 'Backend Developer and ML Engineer',
-        description: 'Passionate about problem-solving and critical thinking. Exceptional teamwork, leadership, and strategic decision-making skills in software development.',
-        languages: 'Spanish and English'
-      },
-      {
-        name: 'Andrés Felipe Triviño',
-        role: 'Full Stack Developer with Backend Focus',
-        description: 'With extensive experience in Java, design patterns, and databases (MySQL, PostgreSQL, Oracle). Knowledgeable in JavaScript, HTML, CSS, and Python. Strong responsibility and leadership skills.',
-        languages: 'Spanish and English'
-      },
-      {
-        name: 'Tomás David Vera',
-        role: 'Full Stack Developer with Frontend Focus',
-        description: 'Creative and passionate about technology. With strong logical thinking, responsibility, and skills in developing engaging and dynamic interfaces.',
-        languages: 'Spanish and English'
-      }
-    ],
-    moreInfo: 'More Information',
-    lessInfo: 'Close Details'
-  },
-  whySoftware: {
-    title: 'Why Software is Necessary as a Solution?',
-    paragraphs: [
-      'Software is not just a technological tool; it is key to optimizing processes in any business, increasing productivity, and reducing costs.',
-      'Software is a set of programs designed to automate tasks, solve complex problems, and improve efficiency in data management and communication, offering effective solutions across various industries.',
-      'By implementing custom software, manual and repetitive processes are eliminated, minimizing errors and maximizing operational efficiency.',
-      'From workflow automation to improved decision-making through real-time data analysis, technology becomes a strategic partner for business growth.',
-      'It’s not just about adapting to the digital age, but leveraging its benefits to take your business to the next level.',
-      'Implementing the right solution allows for reduced work time, optimized resources, and improved customer service.',
-      'The change starts today. Are you ready to take the first step toward innovation?'
-    ]
-  },
-  whyExa: {
-    title: 'Why Choose EXA?',
-    cards: [
-      {
-        title: 'Technological Innovation',
-        description: 'Advanced solutions using the best technology in the market.'
-      },
-      {
-        title: 'Security and Trust',
-        description: 'We protect your information with the highest standards.'
-      },
-      {
-        title: 'Optimization and Efficiency',
-        description: 'We improve your experience with fast and effective processes.'
-      },
-      {
-        title: 'Support and Consultation',
-        description: 'We support you step by step with detailed attention.'
-      }
-    ]
-  },
-  footer: {
-    followText: "Follow us on",
-    and: "and",
-    contactTitle: "Contact information",
-    phoneText: "Phone Number",
-    copyright: "All rights reserved.",
-    location: "Bogotá D.C."
-  }
-},
   ja: {
     // Japanese translations (similar structure to Spanish)
     header: {
@@ -549,6 +549,8 @@ function translatePage(language) {
     });
   }
 
+  // Agrega esto dentro de tu función translatePage, antes del último corchete de cierre
+
   // Traducción del footer
   const footerSection = document.querySelector('footer');
   if (footerSection) {
@@ -558,7 +560,7 @@ function translatePage(language) {
       // Preservar los enlaces
       const links = Array.from(followText.querySelectorAll('a'));
       followText.innerHTML = currentLang.footer.followText + ' ';
-      
+
       // Reinsertamos los enlaces con la puntuación correcta
       links.forEach((link, index) => {
         followText.appendChild(link);
@@ -570,7 +572,7 @@ function translatePage(language) {
       });
       followText.appendChild(document.createTextNode('.'));
     }
-    
+
     // Traducir sección de contacto
     const contactoSection = footerSection.querySelector('.contacto');
     if (contactoSection) {
@@ -579,19 +581,19 @@ function translatePage(language) {
       if (contactTitle) {
         contactTitle.textContent = currentLang.footer.contactTitle;
       }
-      
+
       // Traducir "Número de Teléfono"
       const phoneLink = contactoSection.querySelector('a[href^="tel:"]');
       if (phoneLink) {
         phoneLink.textContent = currentLang.footer.phoneText;
       }
-      
+
       // Traducir "Todos los derechos reservados"
       const copyright = contactoSection.querySelector('p:nth-of-type(1)');
       if (copyright) {
         copyright.textContent = `© Exa. 2025. ${currentLang.footer.copyright}`;
       }
-      
+
       // Traducir "Bogotá D.C."
       const location = contactoSection.querySelector('p:nth-of-type(2)');
       if (location) {
@@ -599,6 +601,8 @@ function translatePage(language) {
       }
     }
   }
+
+
 }
 
 // Add language selector buttons
@@ -617,35 +621,36 @@ function addLanguageButtons() {
   languageContainer.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
 
   const languages = [
-    { code: 'es', flag: '🇪🇸', text: 'ES' },
-    { code: 'us', flag: '🇺🇸', text: 'US' },
-    { code: 'jp', flag: '🇯🇵', text: 'JP' }
+    { code: 'es', flag: '🇪🇸' },
+    { code: 'en', flag: '🇺🇸' },
+    { code: 'ja', flag: '🇯🇵' }
   ];
-  
-  // Check if device is Android
-  const isAndroid = /Android/i.test(navigator.userAgent);
+
+
+
 
   languages.forEach(lang => {
     const button = document.createElement('button');
-    
-    // Use text for Android, flags for other devices
-    button.textContent = isAndroid ? lang.text : lang.flag;
-    
-    button.style.fontSize = isAndroid ? '16px' : '24px';
-    button.style.padding = isAndroid ? '5px 10px' : '0';
+    button.textContent = lang.flag;
+
+
+
+
+
     button.style.margin = '0 5px';
+    button.style.fontSize = '20px';
     button.style.background = 'none';
     button.style.border = 'none';
     button.style.cursor = 'pointer';
-    button.style.transition = 'transform 0.2s';
 
-    // Efecto hover
-    button.addEventListener('mouseenter', () => {
-      button.style.transform = 'scale(1.2)';
-    });
-    button.addEventListener('mouseleave', () => {
-      button.style.transform = 'scale(1)';
-    });
+
+
+
+
+
+
+
+
 
     button.addEventListener('click', () => {
       translatePage(lang.code);
@@ -665,6 +670,53 @@ document.addEventListener("DOMContentLoaded", function () {
   const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
   translatePage(savedLanguage);
 });
+
+function addLanguageButtons() {
+  const languageContainer = document.createElement('div');
+  languageContainer.id = 'language-selector';
+  languageContainer.style.position = 'fixed';
+  languageContainer.style.bottom = '20px';  // Cambio de top a bottom
+  languageContainer.style.right = '20px';   // Mantenemos right
+  languageContainer.style.zIndex = '1001';
+  languageContainer.style.display = 'flex';  // Usamos flexbox para alinear
+  languageContainer.style.gap = '10px';      // Espacio entre botones
+  languageContainer.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';  // Fondo semi-transparente
+  languageContainer.style.padding = '10px';  // Padding para que no estén pegados al borde
+  languageContainer.style.borderRadius = '10px';  // Bordes redondeados
+  languageContainer.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';  // Sombra sutil
+
+  const languages = [
+    { code: 'es', flag: '🇪🇸' },
+    { code: 'en', flag: '🇺🇸' },
+    { code: 'ja', flag: '🇯🇵' }
+  ];
+
+  languages.forEach(lang => {
+    const button = document.createElement('button');
+    button.textContent = lang.flag;
+    button.style.fontSize = '24px';
+    button.style.background = 'none';
+    button.style.border = 'none';
+    button.style.cursor = 'pointer';
+    button.style.transition = 'transform 0.2s';  // Añadimos transición para efecto hover
+
+    // Efecto hover
+    button.addEventListener('mouseenter', () => {
+      button.style.transform = 'scale(1.2)';
+    });
+    button.addEventListener('mouseleave', () => {
+      button.style.transform = 'scale(1)';
+    });
+
+    button.addEventListener('click', () => {
+      translatePage(lang.code);
+    });
+
+    languageContainer.appendChild(button);
+  });
+
+  document.body.appendChild(languageContainer);
+}
 
 // Modificar el manejador de eventos de los botones toggle-info
 document.querySelectorAll('.toggle-info').forEach((button, index) => {
