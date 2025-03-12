@@ -442,7 +442,6 @@ en: {
     }
   }
 };
-
 // Language translation function
 function translatePage(language) {
   localStorage.setItem('selectedLanguage', language); // Guarda el idioma en Local Storage
@@ -550,8 +549,6 @@ function translatePage(language) {
     });
   }
 
-  // Agrega esto dentro de tu función translatePage, antes del último corchete de cierre
-
   // Traducción del footer
   const footerSection = document.querySelector('footer');
   if (footerSection) {
@@ -602,8 +599,6 @@ function translatePage(language) {
       }
     }
   }
-  
-
 }
 
 // Add language selector buttons
@@ -622,19 +617,35 @@ function addLanguageButtons() {
   languageContainer.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
 
   const languages = [
-    { code: 'es', flag: '🇪🇸' },
-    { code: 'en', flag: '🇺🇸' },
-    { code: 'ja', flag: '🇯🇵' }
+    { code: 'es', flag: '🇪🇸', text: 'ES' },
+    { code: 'en', flag: '🇺🇸', text: 'EN' },
+    { code: 'ja', flag: '🇯🇵', text: 'JP' }
   ];
+  
+  // Check if device is Android
+  const isAndroid = /Android/i.test(navigator.userAgent);
 
   languages.forEach(lang => {
     const button = document.createElement('button');
-    button.textContent = lang.flag;
+    
+    // Use text for Android, flags for other devices
+    button.textContent = isAndroid ? lang.text : lang.flag;
+    
+    button.style.fontSize = isAndroid ? '16px' : '24px';
+    button.style.padding = isAndroid ? '5px 10px' : '0';
     button.style.margin = '0 5px';
-    button.style.fontSize = '20px';
     button.style.background = 'none';
     button.style.border = 'none';
     button.style.cursor = 'pointer';
+    button.style.transition = 'transform 0.2s';
+
+    // Efecto hover
+    button.addEventListener('mouseenter', () => {
+      button.style.transform = 'scale(1.2)';
+    });
+    button.addEventListener('mouseleave', () => {
+      button.style.transform = 'scale(1)';
+    });
 
     button.addEventListener('click', () => {
       translatePage(lang.code);
@@ -654,53 +665,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
   translatePage(savedLanguage);
 });
-
-function addLanguageButtons() {
-  const languageContainer = document.createElement('div');
-  languageContainer.id = 'language-selector';
-  languageContainer.style.position = 'fixed';
-  languageContainer.style.bottom = '20px';  // Cambio de top a bottom
-  languageContainer.style.right = '20px';   // Mantenemos right
-  languageContainer.style.zIndex = '1001';
-  languageContainer.style.display = 'flex';  // Usamos flexbox para alinear
-  languageContainer.style.gap = '10px';      // Espacio entre botones
-  languageContainer.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';  // Fondo semi-transparente
-  languageContainer.style.padding = '10px';  // Padding para que no estén pegados al borde
-  languageContainer.style.borderRadius = '10px';  // Bordes redondeados
-  languageContainer.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';  // Sombra sutil
-
-  const languages = [
-    { code: 'es', flag: '🇪🇸' },
-    { code: 'en', flag: '🇺🇸' },
-    { code: 'ja', flag: '🇯🇵' }
-  ];
-
-  languages.forEach(lang => {
-    const button = document.createElement('button');
-    button.textContent = lang.flag;
-    button.style.fontSize = '24px';
-    button.style.background = 'none';
-    button.style.border = 'none';
-    button.style.cursor = 'pointer';
-    button.style.transition = 'transform 0.2s';  // Añadimos transición para efecto hover
-
-    // Efecto hover
-    button.addEventListener('mouseenter', () => {
-      button.style.transform = 'scale(1.2)';
-    });
-    button.addEventListener('mouseleave', () => {
-      button.style.transform = 'scale(1)';
-    });
-
-    button.addEventListener('click', () => {
-      translatePage(lang.code);
-    });
-
-    languageContainer.appendChild(button);
-  });
-
-  document.body.appendChild(languageContainer);
-}
 
 // Modificar el manejador de eventos de los botones toggle-info
 document.querySelectorAll('.toggle-info').forEach((button, index) => {
