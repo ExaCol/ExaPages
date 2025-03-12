@@ -4,199 +4,282 @@ const translations = {
     header: {
       home: 'Inicio',
       services: 'Servicios',
-      about: 'Nosotros',
-      faqs: 'FAQs',
-      contact: 'Contáctanos'
+      about: 'Sobre nosotros',
+      faqs: 'Preguntas frecuentes',
+      contact: 'Contacto'
     },
     hero: {
-      subtitle: 'Desarrollamos soluciones tecnológicas',
-      title: 'Impulse su empresa con software diseñado para satisfacer sus necesidades'
+      subtitle: 'Desarrollamos soluciones tecnológicas.',
+      title: 'Apoyamos el crecimiento de su empresa con software adaptado a sus necesidades.'
     },
     about: {
-      title: 'Sobre Nosotros',
+      title: 'Sobre nosotros',
       historyTitle: 'Historia de Exa',
       missionTitle: 'Misión',
       visionTitle: 'Visión',
       historyText: [
-        'La historia de Exa comenzó en las aulas de la Universidad, donde cinco jóvenes apasionados por la tecnología -Luis, Julián, Nicolás, Tomás y Felipe- descubrieron que compartir una visión podía transformar ideas en realidades. Como estudiantes de Ingeniería de Sistemas, cada proyecto los acercó más a su verdadera vocación: crear soluciones tecnológicas que marcaran la diferencia.',
-        'En sexto semestre, en el año 2024, aceptaron un reto en la materia de Desarrollo Web: idear un proyecto innovador. Inspirados en una necesidad real de su universidad, desarrollaron una plataforma para el agendamiento y reserva de laboratorios, un sistema inexistente hasta ese momento. Lo que comenzó como un simple trabajo académico se convirtió en un éxito rotundo. La respuesta de la comunidad fue abrumadora: felicitaciones, agradecimientos y, sobre todo, el impacto real de la solución en la vida estudiantil.',
-        'Ese momento les permitió darse cuenta de algo crucial: contaban con las habilidades, la pasión y la visión para lograr más. ¿Por qué limitar su impacto a una sola universidad cuando podían ayudar a muchas más empresas y organizaciones a optimizar sus procesos? Con esa motivación, en enero de 2025 nació Exa, una empresa creada para transformar desafíos en oportunidades a través del desarrollo de software a la medida.',
-        'Hoy, su compromiso sigue siendo el mismo con el que iniciaron: innovar, solucionar y acompañar a cada cliente en su transformación digital, ofreciendo tecnología diseñada a la medida de sus necesidades.'
+        'La historia de Exa comenzó en el aula universitaria. Cinco jóvenes apasionados por la tecnología —Luis, Julián, Nicolás, Tomás y Felipe— se dieron cuenta de que podían convertir ideas en realidad al compartir una visión común. Como estudiantes de ingeniería de sistemas, se acercaron a su verdadera misión a través de proyectos. La misión era crear soluciones tecnológicas que tuvieran impacto en el mundo.',
+        'En 2024, cuando llegaron al sexto semestre de universidad, aceptaron un desafío en una clase de "Desarrollo Web". El reto consistía en idear un proyecto innovador. Inspirados por las necesidades reales de la universidad, desarrollaron una plataforma para reservar y gestionar laboratorios, un sistema que no existía hasta entonces. Este proyecto, que comenzó como una tarea académica, tuvo un éxito sorprendente. La respuesta de la comunidad universitaria fue abrumadora. Recibieron elogios y agradecimientos, y sobre todo, sintieron la satisfacción de haber impactado de manera real en la vida estudiantil.',
+        'En ese momento, se dieron cuenta de algo importante. Tenían habilidades, pasión y visión, y sabían que podían hacer mucho más. ¿Por qué limitarse a una universidad? Podían optimizar procesos en muchas más empresas y organizaciones. Con esta idea en mente, en enero de 2025, nació Exa. Exa es una empresa con la misión de convertir los desafíos en oportunidades a través del desarrollo de software.',
+        'Y hasta el día de hoy, su creencia no ha cambiado. Innovar, resolver problemas y apoyar la transformación digital de todos sus clientes. Continúan ofreciendo tecnología adaptada a cada una de las necesidades.'
       ],
-      missionText: 'Desarrollar soluciones de software innovadoras que impulsen el crecimiento y la transformación digital de nuestros clientes, optimizando la automatización de sus procesos. A través de tecnología de vanguardia, creatividad y un enfoque personalizado, garantizamos un servicio de excelencia, calidad y compromiso, contribuyendo al éxito y sostenibilidad de las empresas con las que trabajamos.',
-      visionText: 'Consolidarnos como un referente en el desarrollo de software para pequeñas y medianas empresas, tanto a nivel nacional como internacional. Nos distinguimos por nuestra capacidad para ofrecer soluciones tecnológicas eficientes, innovadoras y adaptadas a las necesidades del mercado, generando un impacto positivo en la productividad empresarial y el desarrollo social.'
-    },
-    team: {
-      title: 'Nuestro Equipo',
-      members: [
-        {
-          name: 'Luis Gabriel Romero',
-          role: 'Desarrollador Full Stack',
-          description: 'Especialista en Java, gestión de bases de datos y desarrollo web. Con experiencia en análisis de datos, automatización de procesos y administración de sistemas. Habilidades en trabajo en equipo.',
-          languages: 'Idiomas: Español, Inglés y Japonés'
-        },
-        {
-          name: 'Julián David Nova',
-          role: 'Desarrollador Backend y Analista de Requerimientos',
-          description: 'Experto en Java y bases de datos (MySQL y PostgreSQL). Con conocimientos en JavaScript, Python y HTML para aplicaciones web. Destacado por su capacidad de trabajo en equipo.',
-          languages: 'Idiomas: Español y Inglés'
-        },
-        {
-          name: 'Nicolás Moreno Ramírez',
-          role: 'Backend Developer y ML Engineer',
-          description: 'Apasionado por la resolución de problemas y el pensamiento crítico. Destacado en trabajo en equipo, liderazgo y toma de decisiones estratégicas en el desarrollo de software.',
-          languages: 'Idiomas: Español y Inglés'
-        },
-        {
-          name: 'Andrés Felipe Triviño',
-          role: 'Desarrollador Full Stack con énfasis en Backend',
-          description: 'Amplia experiencia en Java, patrones de diseño y bases de datos (MySQL, PostgreSQL y Oracle). Con conocimientos en JavaScript, HTML, CSS y Python. Responsable, detallista y con habilidades de liderazgo.',
-          languages: 'Idiomas: Español y Inglés'
-        },
-        {
-          name: 'Tomás David Vera',
-          role: 'Desarrollador Full Stack con énfasis en Frontend',
-          description: 'Creativo y apasionado por la tecnología. Se destaca por su lógica, compromiso y talento en el desarrollo de interfaces dinámicas y atractivas.',
-          languages: 'Idiomas: Español y Inglés'
-        },
-        // Add translations for other team members similarly
-      ],
-      moreInfo: 'Más información',
-      lessInfo: 'Menos información'
-    },
-    whySoftware: {
-      title: '¿Por qué Necesito un software como solución?',
-      paragraphs: [
-        'El software es mucho más que una herramienta tecnológica; es la clave para optimizar procesos, mejorar la productividad y reducir costos en cualquier negocio. Se trata de un conjunto de programas diseñados para automatizar tareas, resolver problemas complejos y facilitar la gestión de datos y la comunicación, brindando soluciones eficientes en múltiples sectores.',
-        'Implementar software a la medida significa dejar atrás procesos manuales y repetitivos, minimizando errores y maximizando la eficiencia operativa. Desde la automatización de flujos de trabajo hasta la mejora en la toma de decisiones con análisis de datos en tiempo real, la tecnología se convierte en un aliado estratégico para el crecimiento de tu empresa.',
-        'No se trata solo de adaptarse a la era digital, sino de aprovechar sus ventajas para impulsar tu negocio al siguiente nivel. Con la solución adecuada, puedes reducir tiempos de ejecución, optimizar recursos y ofrecer un mejor servicio a tus clientes. La transformación comienza hoy. ¿Estás listo para dar el paso hacia la innovación?'
-      ]
-    },
-    whyExa: {
-      title: '¿Por qué elegir EXA?',
-      cards: [
-        {
-          title: 'Innovación Tecnológica',
-          description: 'Soluciones avanzadas con la mejor tecnología del mercado.'
-        },
-        {
-          title: 'Seguridad y Confianza',
-          description: 'Protegemos tu información con los más altos estándares.'
-        },
-        {
-          title: 'Optimización y Eficiencia',
-          description: 'Procesos rápidos y efectivos para mejorar tu experiencia.'
-        },
-        {
-          title: 'Soporte y Asesoría',
-          description: 'Te acompañamos en cada paso con atención personalizada.'
-        }
-      ]
+      missionText: 'Desarrollamos soluciones de software innovadoras, impulsando el crecimiento y la transformación digital de nuestros clientes, mientras optimizamos la automatización de procesos. A través de tecnología de vanguardia, creatividad y un enfoque personalizado, ofrecemos servicios con una calidad excepcional y un alto sentido de responsabilidad, contribuyendo al éxito y sostenibilidad de las empresas con las que trabajamos.',
+      visionText: 'Aspiramos a consolidarnos como líderes en el desarrollo de software para pequeñas y medianas empresas tanto a nivel nacional como internacional. Nuestra misión es contribuir al aumento de la productividad empresarial y al desarrollo de la sociedad mediante soluciones tecnológicas innovadoras y eficientes que se adapten a las necesidades del mercado.'
     },
     projects: {
       title: 'Nuestros proyectos',
-      viewMore: 'Ver más',
-      items: [
+      cards: [
         {
-          title: "Sistema de Reserva de Laboratorios",
-          description: "Plataforma de gestión y reserva de espacios académicos para universidades."
+          title: 'Proyecto 1',
+          description: 'Descripción 1',
+          linkText: 'Ver más'
         },
         {
-          title: "App de Gestión Empresarial",
-          description: "Solución integral para optimizar procesos administrativos y de comunicación."
+          title: 'Proyecto 2',
+          description: 'Descripción 2',
+          linkText: 'Ver más'
         },
         {
-          title: "Plataforma de Educación Online",
-          description: "Sistema de aprendizaje virtual con herramientas interactivas y seguimiento."
+          title: 'Proyecto 3',
+          description: 'Descripción 3',
+          linkText: 'Ver más'
         },
         {
-          title: "Sistema de Inventario Inteligente",
-          description: "Aplicación de control y seguimiento de stock con predicción de demanda."
+          title: 'Proyecto 4',
+          description: 'Descripción 4',
+          linkText: 'Ver más'
         },
         {
-          title: "CRM Personalizado",
-          description: "Herramienta de gestión de relaciones con clientes adaptada a cada negocio."
+          title: 'Proyecto 5',
+          description: 'Descripción 5',
+          linkText: 'Ver más'
         },
         {
-          title: "Plataforma de Analítica de Datos",
-          description: "Solución de inteligencia de negocios con visualización de métricas en tiempo real."
-        }
+          title: 'Proyecto 6',
+          description: 'Descripción 6',
+          linkText: 'Ver más'
+        },
       ]
-    }
-  },
-  en: {
-    // English translations (similar structure to Spanish)
-    header: {
-      home: 'Home',
-      services: 'Services',
-      about: 'About Us',
-      faqs: 'FAQs',
-      contact: 'Contact Us'
-    },
-    hero: {
-      subtitle: 'Desarrollamos soluciones tecnológicas',
-      title: 'Impulse su empresa con software diseñado para satisfacer sus necesidades'
-    },
-    about: {
-      title: 'Sobre Nosotros',
-      historyTitle: 'Historia de Exa',
-      missionTitle: 'Misión',
-      visionTitle: 'Visión',
-      historyText: [
-        'La historia de Exa comenzó en las aulas de la Universidad, donde cinco jóvenes apasionados por la tecnología -Luis, Julián, Nicolás, Tomás y Felipe- descubrieron que compartir una visión podía transformar ideas en realidades. Como estudiantes de Ingeniería de Sistemas, cada proyecto los acercó más a su verdadera vocación: crear soluciones tecnológicas que marcaran la diferencia.',
-        'En sexto semestre, en el año 2024, aceptaron un reto en la materia de Desarrollo Web: idear un proyecto innovador. Inspirados en una necesidad real de su universidad, desarrollaron una plataforma para el agendamiento y reserva de laboratorios, un sistema inexistente hasta ese momento. Lo que comenzó como un simple trabajo académico se convirtió en un éxito rotundo. La respuesta de la comunidad fue abrumadora: felicitaciones, agradecimientos y, sobre todo, el impacto real de la solución en la vida estudiantil.',
-        'Ese momento les permitió darse cuenta de algo crucial: contaban con las habilidades, la pasión y la visión para lograr más. ¿Por qué limitar su impacto a una sola universidad cuando podían ayudar a muchas más empresas y organizaciones a optimizar sus procesos? Con esa motivación, en enero de 2025 nació Exa, una empresa creada para transformar desafíos en oportunidades a través del desarrollo de software a la medida.',
-        'Hoy, su compromiso sigue siendo el mismo con el que iniciaron: innovar, solucionar y acompañar a cada cliente en su transformación digital, ofreciendo tecnología diseñada a la medida de sus necesidades.'
-      ],
-      missionText: 'Desarrollar soluciones de software innovadoras que impulsen el crecimiento y la transformación digital de nuestros clientes, optimizando la automatización de sus procesos. A través de tecnología de vanguardia, creatividad y un enfoque personalizado, garantizamos un servicio de excelencia, calidad y compromiso, contribuyendo al éxito y sostenibilidad de las empresas con las que trabajamos.',
-      visionText: 'Consolidarnos como un referente en el desarrollo de software para pequeñas y medianas empresas, tanto a nivel nacional como internacional. Nos distinguimos por nuestra capacidad para ofrecer soluciones tecnológicas eficientes, innovadoras y adaptadas a las necesidades del mercado, generando un impacto positivo en la productividad empresarial y el desarrollo social.'
     },
     team: {
-      title: 'Nuestro Equipo',
+      title: 'Nuestro equipo',
       members: [
         {
           name: 'Luis Gabriel Romero',
-          role: 'Desarrollador Full Stack',
-          description: 'Especialista en Java, gestión de bases de datos y desarrollo web. Con experiencia en análisis de datos, automatización de procesos y administración de sistemas. Habilidades en trabajo en equipo.',
-          languages: 'Idiomas: Español, Inglés y Japonés'
+          role: 'Ingeniero Full Stack',
+          description: 'Experto en Java, gestión de bases de datos y desarrollo web. Con experiencia en análisis de datos, automatización de procesos y administración de sistemas. Con habilidades excepcionales para el trabajo en equipo.',
+          languages: 'Idiomas: Español, Inglés, Japonés'
         },
-        // Add translations for other team members similarly
+        {
+          name: 'Julián David Nova',
+          role: 'Ingeniero Backend y Analista de Requerimientos',
+          description: 'Experto en Java y bases de datos (MySQL y PostgreSQL). Con conocimientos de JavaScript, Python y HTML para aplicaciones web. Con excelentes habilidades para trabajar en equipo.',
+          languages: 'Español e Inglés'
+        },
+        {
+          name: 'Nicolás Moreno Ramírez',
+          role: 'Desarrollador Backend y Ingeniero de ML',
+          description: 'Apasionado por la resolución de problemas y el pensamiento crítico. Con habilidades destacadas en trabajo en equipo, liderazgo y toma de decisiones estratégicas en desarrollo de software.',
+          languages: 'Español e Inglés'
+        },
+        {
+          name: 'Andrés Felipe Triviño',
+          role: 'Desarrollador Full Stack con enfoque en Backend',
+          description: 'Con amplia experiencia en Java, patrones de diseño y bases de datos (MySQL, PostgreSQL, Oracle). Con conocimientos en JavaScript, HTML, CSS y Python. Con un fuerte sentido de responsabilidad y habilidades de liderazgo.',
+          languages: 'Español e Inglés'
+        },
+        {
+          name: 'Tomás David Vera',
+          role: 'Desarrollador Full Stack con enfoque en Frontend',
+          description: 'Creativo y apasionado por la tecnología. Con un enfoque en pensamiento lógico, responsabilidad y desarrollo de interfaces atractivas y dinámicas.',
+          languages: 'Español e Inglés'
+        }
       ],
       moreInfo: 'Más información',
-      lessInfo: 'Menos información'
+      lessInfo: 'Cerrar detalles'
     },
     whySoftware: {
-      title: '¿Por qué Necesito un software como solución?',
+      title: '¿Por qué es necesario el software como solución?',
       paragraphs: [
-        'El software es mucho más que una herramienta tecnológica; es la clave para optimizar procesos, mejorar la productividad y reducir costos en cualquier negocio. Se trata de un conjunto de programas diseñados para automatizar tareas, resolver problemas complejos y facilitar la gestión de datos y la comunicación, brindando soluciones eficientes en múltiples sectores.',
-        'Implementar software a la medida significa dejar atrás procesos manuales y repetitivos, minimizando errores y maximizando la eficiencia operativa. Desde la automatización de flujos de trabajo hasta la mejora en la toma de decisiones con análisis de datos en tiempo real, la tecnología se convierte en un aliado estratégico para el crecimiento de tu empresa.',
-        'No se trata solo de adaptarse a la era digital, sino de aprovechar sus ventajas para impulsar tu negocio al siguiente nivel. Con la solución adecuada, puedes reducir tiempos de ejecución, optimizar recursos y ofrecer un mejor servicio a tus clientes. La transformación comienza hoy. ¿Estás listo para dar el paso hacia la innovación?'
+        'El software no es solo una herramienta tecnológica, es la clave para optimizar los procesos de cualquier negocio, aumentar la productividad y reducir costos.',
+        'El software es un conjunto de programas diseñados para automatizar tareas, resolver problemas complejos y mejorar la eficiencia en la gestión de datos y comunicación, ofreciendo soluciones efectivas en diversas industrias.',
+        'Al implementar software a medida, se eliminan procesos manuales y repetitivos, minimizando errores y maximizando la eficiencia operativa.',
+        'Desde la automatización de flujos de trabajo hasta la mejora en la toma de decisiones mediante análisis de datos en tiempo real, la tecnología se convierte en un socio estratégico para el crecimiento de las empresas.',
+        'No solo se trata de adaptarse a la era digital, sino de aprovechar sus beneficios para llevar los negocios al siguiente nivel.',
+        'La implementación de la solución adecuada permite reducir tiempos de trabajo, optimizar recursos y ofrecer un mejor servicio al cliente.',
+        'El cambio comienza hoy. ¿Está listo para dar el primer paso hacia la innovación?'
       ]
     },
     whyExa: {
       title: '¿Por qué elegir EXA?',
       cards: [
         {
-          title: 'Innovación Tecnológica',
-          description: 'Soluciones avanzadas con la mejor tecnología del mercado.'
+          title: 'Innovación tecnológica',
+          description: 'Soluciones avanzadas utilizando la mejor tecnología del mercado.'
         },
         {
-          title: 'Seguridad y Confianza',
-          description: 'Protegemos tu información con los más altos estándares.'
+          title: 'Seguridad y confianza',
+          description: 'Protegemos su información con los más altos estándares.'
         },
         {
-          title: 'Optimización y Eficiencia',
-          description: 'Procesos rápidos y efectivos para mejorar tu experiencia.'
+          title: 'Optimización y eficiencia',
+          description: 'Mejoramos su experiencia con procesos rápidos y efectivos.'
         },
         {
-          title: 'Soporte y Asesoría',
-          description: 'Te acompañamos en cada paso con atención personalizada.'
+          title: 'Soporte y asesoría',
+          description: 'Lo apoyamos en cada paso con atención detallada.'
         }
       ]
+    },
+    footer: {
+      followText: "Síguenos en",
+      and: "y",
+      contactTitle: "Datos de contacto",
+      phoneText: "Número de Teléfono",
+      copyright: "Todos los derechos reservados.",
+      location: "Bogotá D.C."
     }
-
-    // Add more English translations...
+},
+en: {
+  header: {
+    home: 'Home',
+    services: 'Services',
+    about: 'About Us',
+    faqs: 'FAQs',
+    contact: 'Contact'
   },
+  hero: {
+    subtitle: 'We develop technological solutions.',
+    title: 'We support your company’s growth with software tailored to your needs.'
+  },
+  about: {
+    title: 'About Us',
+    historyTitle: 'Exa’s History',
+    missionTitle: 'Mission',
+    visionTitle: 'Vision',
+    historyText: [
+      'Exa’s history began in the university classroom. Five young individuals passionate about technology —Luis, Julián, Nicolás, Tomás, and Felipe— realized that by sharing a common vision, they could turn ideas into reality. As systems engineering students, they came closer to their true mission through projects. Their mission was to create technological solutions that would have an impact on the world.',
+      'In 2024, when they reached their sixth semester at university, they accepted a challenge in a "Web Development" class. The challenge was to come up with an innovative project. Inspired by the university’s real needs, they developed a platform to reserve and manage labs, a system that did not exist before. This project, which started as an academic task, became a remarkable success. The university community’s response was overwhelming. They received praise and gratitude, and most importantly, they felt the satisfaction of having made a real impact on student life.',
+      'At that moment, they realized something important. They had the skills, passion, and vision, and they knew they could accomplish much more. Why limit themselves to one university? They could optimize processes for many more businesses and organizations. With this in mind, Exa was born in January 2025. Exa is a company with the mission of turning challenges into opportunities through software development.',
+      'And to this day, their belief remains unchanged. To innovate, solve problems, and support the digital transformation of all their clients. They continue to offer technology tailored to each individual need.'
+    ],
+    missionText: 'We develop innovative software solutions, driving the growth and digital transformation of our clients while optimizing process automation. Through cutting-edge technology, creativity, and a personalized approach, we provide services with exceptional quality and high responsibility, contributing to the success and sustainability of the companies we work with.',
+    visionText: 'We aim to establish ourselves as leaders in software development for small and medium-sized enterprises, both nationally and internationally. Our mission is to contribute to increasing business productivity and societal development by providing innovative and efficient technological solutions that adapt to market needs.'
+  },
+  projects: {
+    title: 'Our Projects',
+    cards: [
+      {
+        title: 'Project 1',
+        description: 'Description 1',
+        linkText: 'See more'
+      },
+      {
+        title: 'Project 2',
+        description: 'Description 2',
+        linkText: 'See more'
+      },
+      {
+        title: 'Project 3',
+        description: 'Description 3',
+        linkText: 'See more'
+      },
+      {
+        title: 'Project 4',
+        description: 'Description 4',
+        linkText: 'See more'
+      },
+      {
+        title: 'Project 5',
+        description: 'Description 5',
+        linkText: 'See more'
+      },
+      {
+        title: 'Project 6',
+        description: 'Description 6',
+        linkText: 'See more'
+      }
+    ]
+  },
+  team: {
+    title: 'Our Team',
+    members: [
+      {
+        name: 'Luis Gabriel Romero',
+        role: 'Full Stack Engineer',
+        description: 'Expert in Java, database management, and web development. With experience in data analysis, process automation, and system administration. Exceptional teamwork skills.',
+        languages: 'Languages: Spanish, English, Japanese'
+      },
+      {
+        name: 'Julián David Nova',
+        role: 'Backend Engineer and Requirements Analyst',
+        description: 'Expert in Java and databases (MySQL and PostgreSQL). Knowledgeable in JavaScript, Python, and HTML for web applications. Excellent teamwork abilities.',
+        languages: 'Spanish and English'
+      },
+      {
+        name: 'Nicolás Moreno Ramírez',
+        role: 'Backend Developer and ML Engineer',
+        description: 'Passionate about problem-solving and critical thinking. Exceptional teamwork, leadership, and strategic decision-making skills in software development.',
+        languages: 'Spanish and English'
+      },
+      {
+        name: 'Andrés Felipe Triviño',
+        role: 'Full Stack Developer with Backend Focus',
+        description: 'With extensive experience in Java, design patterns, and databases (MySQL, PostgreSQL, Oracle). Knowledgeable in JavaScript, HTML, CSS, and Python. Strong responsibility and leadership skills.',
+        languages: 'Spanish and English'
+      },
+      {
+        name: 'Tomás David Vera',
+        role: 'Full Stack Developer with Frontend Focus',
+        description: 'Creative and passionate about technology. With strong logical thinking, responsibility, and skills in developing engaging and dynamic interfaces.',
+        languages: 'Spanish and English'
+      }
+    ],
+    moreInfo: 'More Information',
+    lessInfo: 'Close Details'
+  },
+  whySoftware: {
+    title: 'Why Software is Necessary as a Solution?',
+    paragraphs: [
+      'Software is not just a technological tool; it is key to optimizing processes in any business, increasing productivity, and reducing costs.',
+      'Software is a set of programs designed to automate tasks, solve complex problems, and improve efficiency in data management and communication, offering effective solutions across various industries.',
+      'By implementing custom software, manual and repetitive processes are eliminated, minimizing errors and maximizing operational efficiency.',
+      'From workflow automation to improved decision-making through real-time data analysis, technology becomes a strategic partner for business growth.',
+      'It’s not just about adapting to the digital age, but leveraging its benefits to take your business to the next level.',
+      'Implementing the right solution allows for reduced work time, optimized resources, and improved customer service.',
+      'The change starts today. Are you ready to take the first step toward innovation?'
+    ]
+  },
+  whyExa: {
+    title: 'Why Choose EXA?',
+    cards: [
+      {
+        title: 'Technological Innovation',
+        description: 'Advanced solutions using the best technology in the market.'
+      },
+      {
+        title: 'Security and Trust',
+        description: 'We protect your information with the highest standards.'
+      },
+      {
+        title: 'Optimization and Efficiency',
+        description: 'We improve your experience with fast and effective processes.'
+      },
+      {
+        title: 'Support and Consultation',
+        description: 'We support you step by step with detailed attention.'
+      }
+    ]
+  },
+  footer: {
+    followText: "Follow us on",
+    and: "and",
+    contactTitle: "Contact information",
+    phoneText: "Phone Number",
+    copyright: "All rights reserved.",
+    location: "Bogotá D.C."
+  }
+},
   ja: {
     // Japanese translations (similar structure to Spanish)
     header: {
@@ -223,6 +306,41 @@ const translations = {
       ],
       missionText: '革新的なソフトウェアソリューションを開発し、お客様の成長とデジタル変革を推進するとともに、業務プロセスの自動化を最適化します。最先端技術、創造性、そして個別対応のアプローチを通じて、卓越した品質と高い責任感を持つサービスを提供し、共に働く企業の成功と持続可能性に貢献します。',
       visionText: '国内外の中小企業向けソフトウェア開発のリーダーとしての地位を確立することを目指します。市場のニーズに適応した効率的かつ革新的な技術ソリューションを提供する能力により、企業の生産性向上と社会の発展に貢献することを使命とします。'
+    },
+    projects: {
+      title: '私たちのプロジェクト', // "Nuestros proyectos" en japonés
+      cards: [
+        {
+          title: 'プロジェクト1',
+          description: '説明1',
+          linkText: '詳細を見る' // "Ver más" en japonés
+        },
+        {
+          title: 'プロジェクト2',
+          description: '説明2',
+          linkText: '詳細を見る'
+        },
+        {
+          title: 'プロジェクト3',
+          description: '説明3',
+          linkText: '詳細を見る'
+        },
+        {
+          title: 'プロジェクト4',
+          description: '説明4',
+          linkText: '詳細を見る'
+        },
+        {
+          title: 'プロジェクト5',
+          description: '説明5',
+          linkText: '詳細を見る'
+        },
+        {
+          title: 'プロジェクト6',
+          description: '説明6',
+          linkText: '詳細を見る'
+        },
+      ]
     },
     team: {
       title: '私たちのチーム',
@@ -294,6 +412,14 @@ const translations = {
           description: '一歩一歩、丁寧な対応であなたをサポートします。'
         }
       ]
+    },
+    footer: {
+      followText: "フォローしてください",
+      and: "と",
+      contactTitle: "連絡先",
+      phoneText: "電話番号",
+      copyright: "全著作権所有。",
+      location: "ボゴタ D.C."
     }
   }
 };
@@ -377,14 +503,88 @@ function translatePage(language) {
     const exaCards = document.querySelectorAll('.why-exa-card');
     currentLang.whyExa.cards.forEach((card, index) => {
       if (exaCards[index]) {
-        const cardTitle = exaCards[index].querySelector('.card-title');
-        const cardDescription = exaCards[index].querySelector('.card-description');
+        const cardTitle = exaCards[index].querySelector('h2');
+        const cardDescription = exaCards[index].querySelector('p');
 
         if (cardTitle) cardTitle.textContent = card.title;
         if (cardDescription) cardDescription.textContent = card.description;
       }
     });
   }
+
+  // Traducción de la sección "Nuestros proyectos"
+  const projectsSection = document.querySelector('.projects');
+  if (projectsSection) {
+    projectsSection.querySelector('h1').textContent = currentLang.projects.title;
+
+    const projectCards = document.querySelectorAll('.project-card');
+    currentLang.projects.cards.forEach((card, index) => {
+      if (projectCards[index]) {
+        const cardTitle = projectCards[index].querySelector('h2');
+        const cardDescription = projectCards[index].querySelector('p');
+        const cardLink = projectCards[index].querySelector('a');
+
+        if (cardTitle) cardTitle.textContent = card.title;
+        if (cardDescription) cardDescription.textContent = card.description;
+        if (cardLink) cardLink.textContent = card.linkText;
+      }
+    });
+  }
+
+  // Agrega esto dentro de tu función translatePage, antes del último corchete de cierre
+
+  // Traducción del footer
+  const footerSection = document.querySelector('footer');
+  if (footerSection) {
+    // Traducir "Síguenos en"
+    const followText = footerSection.querySelector('p:first-child');
+    if (followText) {
+      // Preservar los enlaces
+      const links = Array.from(followText.querySelectorAll('a'));
+      followText.innerHTML = currentLang.footer.followText + ' ';
+      
+      // Reinsertamos los enlaces con la puntuación correcta
+      links.forEach((link, index) => {
+        followText.appendChild(link);
+        if (index < links.length - 2) {
+          followText.appendChild(document.createTextNode(', '));
+        } else if (index === links.length - 2) {
+          followText.appendChild(document.createTextNode(' ' + currentLang.footer.and + ' '));
+        }
+      });
+      followText.appendChild(document.createTextNode('.'));
+    }
+    
+    // Traducir sección de contacto
+    const contactoSection = footerSection.querySelector('.contacto');
+    if (contactoSection) {
+      // Traducir título
+      const contactTitle = contactoSection.querySelector('h3');
+      if (contactTitle) {
+        contactTitle.textContent = currentLang.footer.contactTitle;
+      }
+      
+      // Traducir "Número de Teléfono"
+      const phoneLink = contactoSection.querySelector('a[href^="tel:"]');
+      if (phoneLink) {
+        phoneLink.textContent = currentLang.footer.phoneText;
+      }
+      
+      // Traducir "Todos los derechos reservados"
+      const copyright = contactoSection.querySelector('p:nth-of-type(1)');
+      if (copyright) {
+        copyright.textContent = `© Exa. 2025. ${currentLang.footer.copyright}`;
+      }
+      
+      // Traducir "Bogotá D.C."
+      const location = contactoSection.querySelector('p:nth-of-type(2)');
+      if (location) {
+        location.textContent = currentLang.footer.location;
+      }
+    }
+  }
+  
+
 }
 
 // Add language selector buttons
@@ -485,17 +685,17 @@ function addLanguageButtons() {
 
 // Modificar el manejador de eventos de los botones toggle-info
 document.querySelectorAll('.toggle-info').forEach((button, index) => {
-  button.addEventListener('click', function() {
+  button.addEventListener('click', function () {
     this.classList.toggle('active');
     const hiddenInfo = this.parentElement.querySelector('.hidden-info');
-    
+
     if (hiddenInfo) {
       hiddenInfo.classList.toggle('show');
-      
+
       // Obtener el idioma actual
       const currentLanguage = localStorage.getItem('selectedLanguage') || 'es';
       const translations = window.translations[currentLanguage];
-      
+
       // Actualizar el texto del botón según el estado y el idioma
       if (this.classList.contains('active')) {
         this.textContent = translations.team.lessInfo;
