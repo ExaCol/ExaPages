@@ -686,9 +686,9 @@ function addLanguageButtons() {
   languageContainer.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';  // Sombra sutil
 
   const languages = [
-    { code: 'es', flag: '🇪🇸' },
-    { code: 'en', flag: '🇺🇸' },
-    { code: 'ja', flag: '🇯🇵' }
+    { code: 'es', flag: '🇪🇸', text: 'ES' },
+    { code: 'en', flag: '🇺🇸', text: 'US'  },
+    { code: 'ja', flag: '🇯🇵', text: 'JP'  }
   ];
 
   languages.forEach(lang => {
