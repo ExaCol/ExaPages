@@ -549,8 +549,6 @@ function translatePage(language) {
     });
   }
 
-  // Agrega esto dentro de tu función translatePage, antes del último corchete de cierre
-
   // Traducción del footer
   const footerSection = document.querySelector('footer');
   if (footerSection) {
@@ -601,8 +599,6 @@ function translatePage(language) {
       }
     }
   }
-
-
 }
 
 // Add language selector buttons
@@ -621,36 +617,29 @@ function addLanguageButtons() {
   languageContainer.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
 
   const languages = [
-    { code: 'es', flag: '🇪🇸' },
-    { code: 'en', flag: '🇺🇸' },
-    { code: 'ja', flag: '🇯🇵' }
+    { code: 'es', text: 'ES' },
+    { code: 'en', text: 'US' },
+    { code: 'ja', text: 'JP' }
   ];
-
-
-
 
   languages.forEach(lang => {
     const button = document.createElement('button');
-    button.textContent = lang.flag;
-
-
-
-
-
-    button.style.margin = '0 5px';
-    button.style.fontSize = '20px';
+    button.textContent = lang.text; // Usar texto en lugar de bandera
+    button.style.fontSize = '16px'; // Tamaño de fuente adecuado para texto
     button.style.background = 'none';
     button.style.border = 'none';
     button.style.cursor = 'pointer';
+    button.style.transition = 'transform 0.2s';
+    button.style.padding = '5px 8px'; // Añadir padding para mejor apariencia
+    button.style.fontWeight = 'bold'; // Hacer el texto más visible
 
-
-
-
-
-
-
-
-
+    // Efecto hover
+    button.addEventListener('mouseenter', () => {
+      button.style.transform = 'scale(1.2)';
+    });
+    button.addEventListener('mouseleave', () => {
+      button.style.transform = 'scale(1)';
+    });
 
     button.addEventListener('click', () => {
       translatePage(lang.code);
@@ -670,53 +659,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
   translatePage(savedLanguage);
 });
-
-function addLanguageButtons() {
-  const languageContainer = document.createElement('div');
-  languageContainer.id = 'language-selector';
-  languageContainer.style.position = 'fixed';
-  languageContainer.style.bottom = '20px';  // Cambio de top a bottom
-  languageContainer.style.right = '20px';   // Mantenemos right
-  languageContainer.style.zIndex = '1001';
-  languageContainer.style.display = 'flex';  // Usamos flexbox para alinear
-  languageContainer.style.gap = '10px';      // Espacio entre botones
-  languageContainer.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';  // Fondo semi-transparente
-  languageContainer.style.padding = '10px';  // Padding para que no estén pegados al borde
-  languageContainer.style.borderRadius = '10px';  // Bordes redondeados
-  languageContainer.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';  // Sombra sutil
-
-  const languages = [
-    { code: 'es', flag: '🇪🇸', text: 'ES' },
-    { code: 'en', flag: '🇺🇸', text: 'US'  },
-    { code: 'ja', flag: '🇯🇵', text: 'JP'  }
-  ];
-
-  languages.forEach(lang => {
-    const button = document.createElement('button');
-    button.textContent = lang.flag;
-    button.style.fontSize = '24px';
-    button.style.background = 'none';
-    button.style.border = 'none';
-    button.style.cursor = 'pointer';
-    button.style.transition = 'transform 0.2s';  // Añadimos transición para efecto hover
-
-    // Efecto hover
-    button.addEventListener('mouseenter', () => {
-      button.style.transform = 'scale(1.2)';
-    });
-    button.addEventListener('mouseleave', () => {
-      button.style.transform = 'scale(1)';
-    });
-
-    button.addEventListener('click', () => {
-      translatePage(lang.code);
-    });
-
-    languageContainer.appendChild(button);
-  });
-
-  document.body.appendChild(languageContainer);
-}
 
 // Modificar el manejador de eventos de los botones toggle-info
 document.querySelectorAll('.toggle-info').forEach((button, index) => {
