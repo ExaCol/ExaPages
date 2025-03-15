@@ -19,4 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         hexGrid.appendChild(row);
     }
+    setTimeout(() => {
+        document.querySelector(".loading-container").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }, 3000);
 });
