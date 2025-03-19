@@ -31,7 +31,8 @@ body {
 .nav-contact-container {
   display: flex;
   align-items: center;
-  margin-left: auto; /* This pushes the container to the right */
+  margin-left: auto;
+  /* This pushes the container to the right */
 }
 
 /* Responsive navbar */
@@ -136,7 +137,9 @@ body {
 }
 
 /* Responsive about section */
-.about, .why-software, .why-exa {
+.about,
+.why-software,
+.why-exa {
   max-width: 90%;
   margin: 50px auto;
   padding: 30px;
@@ -146,7 +149,8 @@ body {
   text-align: center;
 }
 
-.about h1, .why-software h1 {
+.about h1,
+.why-software h1 {
   font-size: clamp(1.8em, 5vw, 2.5em);
   color: #8869A5;
   margin-bottom: 20px;
@@ -158,7 +162,8 @@ body {
   margin-top: 30px;
 }
 
-.about p, .why-software p {
+.about p,
+.why-software p {
   font-size: clamp(1em, 3vw, 1.2em);
   color: #555;
   line-height: 1.6;
@@ -166,7 +171,8 @@ body {
   margin-bottom: 15px;
 }
 
-.about::before, .why-software::before {
+.about::before,
+.why-software::before {
   content: "";
   display: block;
   width: 80px;
@@ -301,7 +307,8 @@ body {
   font-weight: bold;
 }
 
-.team-skills, .hidden-info {
+.team-skills,
+.hidden-info {
   font-size: 1em;
   color: #555;
   margin-bottom: 15px;
@@ -435,7 +442,7 @@ footer p {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-  
+
   .nav-contact-container {
     flex: 1;
     justify-content: flex-end;
@@ -449,17 +456,17 @@ footer p {
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.95);
   }
-  
+
   .menu-toggle {
     display: block;
     order: 3;
   }
-  
+
   .nav-contact-container {
     flex-direction: row-reverse;
     width: auto;
   }
-  
+
   .navbar {
     position: fixed;
     top: 60px;
@@ -476,28 +483,28 @@ footer p {
     transition: max-height 0.5s ease;
     box-shadow: none;
   }
-  
+
   .navbar.active {
     max-height: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
+
   .navbar-menu {
     flex-direction: column;
     padding: 10px;
     gap: 10px;
   }
-  
+
   .navbar-menu li {
     width: 100%;
     text-align: center;
   }
-  
+
   .navbar-menu li a {
     display: block;
     padding: 10px;
   }
-  
+
   .faq-container {
     margin-right: 15px;
   }
@@ -507,30 +514,34 @@ footer p {
   .logo {
     height: 30px;
   }
-  
+
   .faq-link {
     padding: 8px 12px;
     font-size: 12px;
   }
-  
+
   .hero {
     min-height: 20vh;
     margin: 20px auto;
     padding: 20px 10px;
   }
-  
-  .projects-container, .team-container, .why-exa-container {
+
+  .projects-container,
+  .team-container,
+  .why-exa-container {
     gap: 15px;
   }
-  
-  .project-card, .team-card, .why-exa-card {
+
+  .project-card,
+  .team-card,
+  .why-exa-card {
     max-width: 100%;
   }
-  
+
   .why-exa-icon {
     font-size: 2em;
   }
-  
+
   .contacto a {
     display: inline-block;
     margin: 5px;
@@ -649,21 +660,21 @@ footer p {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  
+
   .slider-btn {
     font-size: 18px;
     padding: 8px 12px;
   }
 }
 
-/* From Uiverse.io by McHaXYT */ 
+/* From Uiverse.io by McHaXYT */
 .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
   margin-top: 20px;
-  
+
 }
 
 .button {
@@ -686,8 +697,7 @@ footer p {
 }
 
 .button:hover .btn-svg {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
-    brightness(103%) contrast(103%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
 }
 
 .flex-center {

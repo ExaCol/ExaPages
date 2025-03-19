@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let i = 0; i < 2; i++) { // Solo 2 filas
         const row = document.createElement("div");
         row.classList.add("hex-row");
-        
+
         if (i === 0) {
             row.classList.add("first-row"); // Desplaza la primera fila ligeramente
         }

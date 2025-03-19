@@ -3,8 +3,10 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    overflow-x: hidden; /* Evita el desbordamiento horizontal */
-    max-width: 100%; /* Asegura que no sobrepase el ancho de la pantalla */
+    overflow-x: hidden;
+    /* Evita el desbordamiento horizontal */
+    max-width: 100%;
+    /* Asegura que no sobrepase el ancho de la pantalla */
 }
 
 .hex-grid {
@@ -20,8 +22,10 @@
 }
 
 .first-row {
-    margin-left: 105px; /* Desplaza filas alternas */
-    margin-bottom: -21px; /* Acerca la primera fila a la segunda */
+    margin-left: 105px;
+    /* Desplaza filas alternas */
+    margin-bottom: -21px;
+    /* Acerca la primera fila a la segunda */
 }
 
 .hex {
