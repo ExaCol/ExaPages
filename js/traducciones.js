@@ -153,7 +153,6 @@ const translations = {
       followText: "Síguenos en",
       and: "y",
       contactTitle: "Datos de contacto",
-      phoneText: "Número de Teléfono",
       copyright: "Todos los derechos reservados.",
       location: "Bogotá D.C."
     }
@@ -294,7 +293,6 @@ const translations = {
       followText: "Follow us on",
       and: "and",
       contactTitle: "Contact information",
-      phoneText: "Phone Number",
       copyright: "All rights reserved.",
       location: "Bogotá D.C."
     }
@@ -436,7 +434,6 @@ const translations = {
       followText: "フォローしてください",
       and: "と",
       contactTitle: "連絡先",
-      phoneText: "電話番号",
       copyright: "全著作権所有。",
       location: "ボゴタ D.C."
     }
