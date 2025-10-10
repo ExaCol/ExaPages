@@ -27,36 +27,36 @@ const translations = {
       visionText: 'Consolidarnos como un referente en el desarrollo de software para pequeñas y medianas empresas, tanto a nivel nacional como internacional. Nos distinguimos por nuestra capacidad para ofrecer soluciones tecnológicas eficientes, innovadoras y adaptadas a las necesidades del mercado, generando un impacto positivo en la productividad empresarial y el desarrollo social.'
     },
     projects: {
-      title: 'Nuestros Proyectos',
+      title: 'Nuestros Servicios',
       cards: [
         {
-          title: 'Proyecto 1',
-          description: 'Descripcion 1',
+          title: 'Sistema de Reserva de Laboratorios',
+          description: 'Plataforma de gestión y reserva de espacios académicos para universidades.',
           linkText: 'Ver más'
         },
         {
-          title: 'Proyecto 2',
-          description: 'Descripcion 2',
+          title: 'App de Gestión Empresarial',
+          description: 'Solución integral para optimizar procesos administrativos y de comunicación.',
           linkText: 'Ver más'
         },
         {
-          title: 'Proyecto 3',
-          description: 'Descripcion 3',
+          title: 'Plataforma de Educación Online',
+          description: 'Sistema de aprendizaje virtual con herramientas interactivas y seguimiento.',
           linkText: 'Ver más'
         },
         {
-          title: 'Proyecto 4',
-          description: 'Descripcion 4',
+          title: 'Sistema de Inventario Inteligente',
+          description: 'Aplicación de control y seguimiento de stock con predicción de demanda.',
           linkText: 'Ver más'
         },
         {
-          title: 'Proyecto 5',
-          description: 'Descripcion 5',
+          title: 'CRM Personalizado',
+          description: 'Herramienta de gestión de relaciones con clientes adaptada a cada negocio.',
           linkText: 'Ver más'
         },
         {
-          title: 'Proyecto 6',
-          description: 'Descripcion 6',
+          title: 'Plataforma de Analítica de Datos',
+          description: 'Solución de inteligencia de negocios con visualización de métricas en tiempo real.',
           linkText: 'Ver más'
         }
       ]
@@ -185,36 +185,36 @@ const translations = {
       visionText: 'We aim to establish ourselves as leaders in software development for small and medium-sized enterprises, both nationally and internationally. Our mission is to contribute to increasing business productivity and societal development by providing innovative and efficient technological solutions that adapt to market needs.'
     },
     projects: {
-      title: 'Our Projects',
+      title: 'Our Services',
       cards: [
         {
-          title: 'Project 1',
-          description: 'Description 1',
+          title: 'Laboratory Reservation System',
+          description: 'Management and booking platform for academic spaces in universities.',
           linkText: 'See more'
         },
         {
-          title: 'Project 2',
-          description: 'Description 2',
+          title: 'Business Management App',
+          description: 'Comprehensive solution to optimize administrative processes and communication.',
           linkText: 'See more'
         },
         {
-          title: 'Project 3',
-          description: 'Description 3',
+          title: 'Online Education Platform',
+          description: 'Virtual learning system with interactive tools and progress tracking.',
           linkText: 'See more'
         },
         {
-          title: 'Project 4',
-          description: 'Description 4',
+          title: 'Smart Inventory System',
+          description: 'Application for stock control and tracking with demand prediction.',
           linkText: 'See more'
         },
         {
-          title: 'Project 5',
-          description: 'Description 5',
+          title: 'Custom CRM',
+          description: 'Customer relationship management tool tailored to each business.',
           linkText: 'See more'
         },
         {
-          title: 'Project 6',
-          description: 'Description 6',
+          title: 'Customer relationship management tool tailored to each business.',
+          description: 'Business intelligence solution with real-time metric visualization. ',
           linkText: 'See more'
         }
       ]
@@ -328,33 +328,33 @@ const translations = {
       title: '私たちのプロジェクト', // "Nuestros proyectos" en japonés
       cards: [
         {
-          title: 'プロジェクト1',
-          description: '説明1',
+          title: '研究室予約システム',
+          description: '大学の学術スペースを管理・予約するためのプラットフォーム。',
           linkText: '詳細を見る' // "Ver más" en japonés
         },
         {
-          title: 'プロジェクト2',
-          description: '説明2',
+          title: '企業管理アプリ',
+          description: '管理業務とコミュニケーションを最適化するための包括的なソリューション。',
           linkText: '詳細を見る'
         },
         {
-          title: 'プロジェクト3',
-          description: '説明3',
+          title: 'オンライン教育プラットフォーム',
+          description: 'インタラクティブなツールと進捗管理を備えたバーチャル学習システム。',
           linkText: '詳細を見る'
         },
         {
-          title: 'プロジェクト4',
-          description: '説明4',
+          title: 'スマート在庫管理システム',
+          description: '需要予測を用いた在庫管理および追跡アプリケーション。',
           linkText: '詳細を見る'
         },
         {
-          title: 'プロジェクト5',
-          description: '説明5',
+          title: 'カスタムCRM',
+          description: '各企業に合わせてカスタマイズされた顧客関係管理ツール。',
           linkText: '詳細を見る'
         },
         {
-          title: 'プロジェクト6',
-          description: '説明6',
+          title: 'データ分析プラットフォーム',
+          description: 'リアルタイムで指標を可視化するビジネスインテリジェンスソリューション。',
           linkText: '詳細を見る'
         },
       ]
