@@ -1,9 +1,14 @@
 body {
   margin: 0;
+  margin-top: 70px;
   font-family: Arial, sans-serif;
 }
 
-/* Base header styles */
+.logo {
+  height: 40px;
+}
+
+/* Header */
 .header {
   position: fixed;
   top: 0;
@@ -13,37 +18,48 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: transparent;
-  border-radius: 20px;
+  padding: 10px 40px;
+  background-color: #ffffff;
   box-sizing: border-box;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.logo-text {
+  font-size: 16px; 
+  font-weight: 700;
+  color: #1F2937;
+  letter-spacing: 0.5px;
 }
 
 .logo {
   height: 40px;
+  width: auto;
 }
 
-body {
-  margin-top: 70px;
-}
-
-/* Group navbar and contact in one container */
+/* Contenedor central para centrar la nav */
 .nav-contact-container {
+  flex: 1 1 auto;
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-left: auto;
-  /* This pushes the container to the right */
+  gap: 50px;
 }
 
-/* Responsive navbar */
+/* Navbar centrada */
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  background-color: white;
-  padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
   position: relative;
   transition: all 0.3s ease;
 }
@@ -51,54 +67,56 @@ body {
 .navbar-menu {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 35px;
   margin: 0;
   padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-menu li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 14px;
+  text-decoration: none; 
+  color: #1F2937;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  display: inline-block;
+  line-height: 1.5;
 }
 
 .navbar-menu li a:hover {
-  color: #8869A5;
+  color: #1F2937;
+  border-bottom-color: #1F2937;
 }
 
-/* Mobile menu toggle */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #8869A5;
+.navbar-menu li a.active {
+  color: #1F2937;
+}
+
+.navbar-menu li a.active:hover {
+  border-bottom-color: #1F2937;
 }
 
 .faq-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-left: 15px;
 }
 
 .faq-link {
   text-decoration: none;
   color: white;
   background-color: #C58ADE;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
   white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  line-height: 1.5;
 }
-
-.faq-link:hover {
-  background-color: #8869A5;
-}
-
 /* Responsive hero section */
 .hero {
   text-align: center;
@@ -705,4 +723,10 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.menu-toggle { display: none; }
+
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
 }
